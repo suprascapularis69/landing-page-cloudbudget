@@ -91,11 +91,9 @@ body {
     border-color: black;
 }
 
-.content-wrapper {
+.overview {
     max-width: 1440px;
     margin: 0 auto;
-}
-.overview {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +103,7 @@ body {
 }
 .overview-text {
     max-width: 445px;
-    min-height: 250px;
+    padding: 35px 0;
     line-height: 20px;
     color: #000000;
 }
@@ -134,10 +132,15 @@ body {
     object-fit: cover;
 }
 
-.features {
-    padding: 63px 165px 0 165px;
-    min-height: 660px;
+.features-wrapper {
+    width: 100vw;
     background: #FAFAFA;
+}
+.features {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 63px 165px 0 165px;
+    min-height: 660px;   
 }
 .features__heading {
     font-weight: 600;
@@ -166,7 +169,6 @@ body {
     margin-left: 29px;
     padding: 33px 20px 25px 20px;
     max-width: 293px;
-    min-height: 198px;
     background: #FFFFFF;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -194,6 +196,8 @@ body {
 }
 
 .technology {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 63px 165px 0 165px;
     min-height: 500px;
     background: #FFFFFF;
@@ -210,11 +214,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 226px;
 }
 .technology-list__item {
     max-width: 255px;
-    min-height: 226px;
+    padding-bottom: 32px;
     margin: 0 auto;
 }
 .technology-list__item-wrap {
@@ -255,17 +258,22 @@ body {
     color: #000000;
 }
 
+.mobile-apps-wrapper {
+    width: 100vw;
+    background: #ED4C5C;
+}
 .mobile-apps {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 500px;
     padding: 0 260px 0 165px;
-    background: #ED4C5C;
 }
 .mobile-apps-text {
     max-width: 447px;
-    min-height: 267px;
+    padding: 35px 0;
     color: #FFFFFF;
 }
 .mobile-apps__heading {
@@ -304,6 +312,8 @@ body {
 }
 
 .contact {
+    max-width: 1440px;
+    margin: 0 auto;
     min-height: 500px;
     padding: 117px 165px 0 165px;
     display: flex;
@@ -311,7 +321,7 @@ body {
 }
 .contact-text {
     max-width: 445px;
-    min-height: 160px;
+    padding: 35px 0;
     color: #000000;
 }
 .contact-text__heading {
@@ -372,6 +382,8 @@ body {
 
 .footer {
     max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1440px;
     min-height: 435px;
     padding: 85px 202px 86px 161px;
     margin: 0 auto;
@@ -417,23 +429,14 @@ body {
     line-height: 14px;
 }
 
-@media (max-width: 1280px) {
-    .overview {padding: 0 130px 0 83px;}
-    .features {padding: 84px 83px 0 83px;}
-    .features-list__item-image img {max-width: 320px; min-height: 220px;}
-    .feature-list__item-text {max-width: 263px;}
-    .technology {padding: 84px 83px 0 83px;}
-    .mobile-apps {padding: 0 130px 0 83px;}
-    .contact {padding: 59px 83px 0 83px;}
-    .footer {padding: 85px 83px 86px 83px;}
-}
 
-@media (max-width: 1024px) {
+@media (max-width: 1384px) {
     .header {padding: 0 83px; margin-bottom: 70px;}
     .overview-text {max-width: 320px;}
+    .overview-text__heading {font-size: 34px;}
     .overview-image__item {max-width: 415px; min-height: 281px;}
-    .features-list__item-image img {max-width: 250px; min-height: 150px;}
-    .feature-list__item-text {max-width: 200px; margin-left: 25px;}
+    .features-list__item-image img {max-width: 320px; min-height: 220px;}
+    .feature-list__item-text {max-width: 263px;} 
     .feature-list__item-text-heading {font-size: 16px;}
     .technology-list__item {max-width: 195px;}
     .technology-list__item-wrap {padding: 0 52px;}
@@ -441,15 +444,62 @@ body {
     .technology-list__item-wrap-image {margin-bottom: -9px;}
     .technology-list__item-wrap-image img {width: 60px;}
     .mobile-apps-text {max-width: 320px;}
+    .mobile-apps__heading {font-size: 32px;}
     .mobile-apps-photo img {max-width: 415px; min-height: 281px;}
-    .contact {padding-top: 84px}
     .contact-text {max-width: 350px;}
     .contact-form {max-width: 450px;}
     .contact-form__input {min-width: 450px;}
 }
 
-@media (max-width: 912px) {
-    .header {padding: 0 42px;}
+@media (max-width: 1296px) {
+    .features-list__item-image img {max-width: 270px; min-height: 170px;}
+    .feature-list__item-text {max-width: 220px; margin-left: 25px;}
+}
+
+@media (max-width: 1172px) {
+    .header {padding: 0 15px;}
+    .overview {padding-right: 200px;}
+    .overview-text__heading {font-size: 28px;}
+    .overview-image__item {max-width: 365px; min-height: 231px;}
+    .technology-list__item {max-width: 175px;}
+    .technology-list__item-wrap {padding: 0 42px;}
+    .mobile-apps {padding-right: 200px;}
+    .mobile-apps__heading {font-size: 24px; min-height: 60px;}
+    .mobile-apps-photo img {max-width: 365px; min-height: 231px;}
+    .contact-form {max-width: 350px;}
+    .contact-form__input {min-width: 350px;}
+}
+
+@media (max-width: 1144px) {
+    .features-list__item-image img {max-width: 250px; min-height: 150px;}
+    .feature-list__item-text {max-width: 200px; margin-left: 25px;}
+}
+
+@media (max-width: 1076px) {
+    .header-menu {justify-content: space-around;}
+    .header-menu__item {font-size: 10px;}
+    .features-list__item-image img {max-width: 230px; min-height: 130px;}
+    .feature-list__item-text {max-width: 180px; margin-left: 25px;}
+    .overview-text__description {font-size: 12px;}
+    .overview-image__item {max-width: 315px; min-height: 181px;}
+    .mobile-apps__description {font-size: 12px;}
+    .mobile-apps-photo img {max-width: 315px; min-height: 181px;}
+    .contact-text {max-width: 300px;}
+    .contact-form {max-width: 300px;}
+    .contact-form__input {min-width: 300px;}
+}
+
+@media (max-width: 1024px) {
+    .overview {padding: 0 130px 0 83px;}
+    .features {padding: 84px 83px 0 83px;}
+    .technology {padding: 84px 83px 0 83px;}
+    .mobile-apps {padding: 0 130px 0 83px;}
+    .contact {padding: 84px 83px 0 83px;}
+    .footer {padding: 85px 83px 86px 83px;}
+}
+
+@media (max-width: 856px) {
+    .header {padding: 0 30px;}
     .overview {padding: 0 65px 0 42px;}
     .features {padding: 84px 42px 0 42px;}
     .technology {padding: 84px 42px 0 42px;}
@@ -458,38 +508,26 @@ body {
     .footer {padding: 85px 42px 86px 42px;}
 }
 
-@media (max-width: 820px) {
-    .header {padding: 0 15px;}
-    .overview-image__item {max-width: 365px; min-height: 231px;}
-    .feature-list__item-text {max-width: 150px; margin-bottom: -185px;}
-    .features-list__item-image img {max-width: 200px; min-height: 100px;}
-    .technology-list__item {max-width: 175px;}
-    .technology-list__item-wrap {padding: 0 42px;}
-    .mobile-apps-photo img {max-width: 365px; min-height: 231px;}
-    .contact-form {max-width: 350px;}
-    .contact-form__input {min-width: 350px;}
-}
-
-@media (max-width: 768px) {
-    .header-menu {justify-content: space-around;}
-    .header-menu__item {font-size: 10px;}
-    .overview-image__item {max-width: 315px; min-height: 181px;}
-    .mobile-apps-photo img {max-width: 315px; min-height: 181px;}
-    .contact-text {max-width: 300px;}
-    .contact-form {max-width: 300px;}
-    .contact-form__input {min-width: 300px;}
-}
-
-@media (max-width: 540px) {
+@media (max-width: 772px) {
     .header {justify-content: space-around;}
     .header__logo {display: none;}
     .header__button {display: none;}
     .first-screen__text_heading {font-size: 52px; text-align: center;}
-    .overview {flex-direction: column-reverse; padding: 25px 65px 25px 42px;}
-    .features-list__item:nth-child(3) {display: none;}
+    .overview {flex-direction: column-reverse; padding: 25px 42px;}
+    .overview-text {min-width: 600px;}
+    .overview-text__description {min-width: 600px;}
+    .overview-image__item {max-width: 500px; min-height: 400px;}
+    .features-list {flex-direction: column; align-items: center;}
+    .features-list__item-image {min-height: 600px;}
+    .features-list__item-image img {min-width: 600px; min-height: 300px;}
+    .feature-list__item-text {margin-bottom: 90px; margin-left: 100px; max-width: 400px;}
+    .feature-list__item-text-heading {font-size: 14px;}
     .technology {padding-bottom: 50px;}
     .technology-list {flex-wrap: wrap;}
-    .mobile-apps {flex-direction: column-reverse; padding: 25px 65px 25px 42px;}
+    .mobile-apps {flex-direction: column-reverse; padding: 25px 42px;}
+    .mobile-apps-text {min-width: 600px;}
+    .mobile-apps__heading {text-align: center;}
+    .mobile-apps-photo img {max-width: 500px; min-height: 400px;}
     .contact {justify-content: center ;flex-direction: column; align-items: center; padding-top: 0; min-height: 500px;}
     .contact-text__heading {text-align: center; margin-bottom: 5px;}
     .contact-form__input {min-height: 40px; margin-bottom: 10px;}
@@ -499,33 +537,67 @@ body {
     .footer-list-item__heading {margin-bottom: 10px;}
 }
 
-@media (max-width: 414px) {
+@media (max-width: 700px) {
+    .first-screen__text_heading {font-size: 36px;}
+    .first-screen__text_description {font-size: 20px;}
+    .overview-text {min-width: 500px;}
+    .overview-text__description {min-width: 500px;}
+    .overview-image__item {max-width: 400px; min-height: 300px;}
+    .features-list__item-image {min-height: 500px;}
+    .features-list__item-image img {min-width: 500px; min-height: 250px;}
+    .feature-list__item-text {margin-bottom: 60px; margin-left: 100px; max-width: 300px;}
+    .mobile-apps-text {min-width: 500px;}
+    .mobile-apps-photo img {max-width: 400px; min-height: 300px;}
+}
+
+@media (max-width: 600px) {
     .header {margin-bottom: 80px; padding: 0;}
     .header-menu {min-width: 350px;}
-    .first-screen__text_heading {font-size: 38px; text-align: center;}
-    .first-screen__text_description {font-size: 14px;}
-    .features-list {justify-content: center;}
-    .features-list__item:nth-child(2) {display: none;}
+    .first-screen__text_description {font-size: 18px;}
+    .overview-text {min-width: 400px;}
+    .overview-text__description {min-width: 400px;}
+    .overview-image__item {max-width: 300px; min-height: 250px;}
+    .features-list__item-image {min-height: 400px;}
+    .features-list__item-image img {min-width: 400px; min-height: 200px;}
+    .feature-list__item-text {margin-bottom: 60px; margin-left: 50px; max-width: 300px;}
+    .mobile-apps-text {min-width: 400px;}
+    .mobile-apps-photo img {max-width: 300px; min-height: 250px;}
+}
+
+@media (max-width: 500px) {
+    .overview-text {min-width: 300px;}
+    .overview-text__description {min-width: 300px;}
+    .features-list__item-image {min-height: 300px;}
+    .features-list__item-image img {min-width: 300px; min-height: 150px;}
+    .feature-list__item-text {margin-bottom: 30px; margin-left: 25px; max-width: 250px;}
+    .mobile-apps-text {min-width: 300px;}
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     .header {margin-bottom: 40px;}
     .header-menu {flex-direction: column; min-width: 300px;}
     .first-screen__text_heading {font-size: 32px; margin-bottom: 20px;}
     .first-screen__text_description {font-size: 12px; margin-bottom: 20px;}
     .overview {padding: 10px 10px;}
-    .overview-image__item {max-width: 300px; min-height: 166px;}
+    .overview-text {min-width: 200px;}
+    .overview-text__description {min-width: 200px;}
+    .features {padding: 10px 10px;}
     .mobile-apps {padding: 10px 10px;}
-    .mobile-apps-photo img {max-width: 300px; min-height: 166px;}
+    .mobile-apps-text {min-width: 200px;}
+    .mobile-apps-text__description {min-width: 200px;}
     .contact {padding: 0 10px;}
+    .contact-form__input_name:first-child {margin-right: 0;}
 }
 
 
-@media (max-width: 280px) {
+@media (max-width: 300px) {
     .header-menu {flex-direction: column; min-width: 260px;}
     .overview {padding: 10px 10px;}
     .overview-image__item {max-width: 260px; min-height: 126px;}
+    .features-list__item-image {min-height: 260px;}
+    .features-list__item-image img {min-width: 260px; min-height: 130px;}
+    .feature-list__item-text {margin-bottom: 10px; margin-left: 30px; max-width: 200px;}
     .mobile-apps {padding: 10px 10px;}
     .mobile-apps-photo img {max-width: 260px; min-height: 126px;}
     .contact {padding: 0 10px;}
