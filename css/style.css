@@ -139,7 +139,7 @@ body {
 .features {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 63px 165px 0 165px;
+    padding-top: 63px;
     min-height: 660px;   
 }
 .features__heading {
@@ -152,10 +152,13 @@ body {
 }
 .features-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .features-list__item {
     position: relative;
+}
+.features-list__item:not(:last-child) {
+    margin-right: 30px;
 }
 .features-list__item-image img {
     max-width: 350px;
@@ -430,85 +433,20 @@ body {
 }
 
 
-@media (max-width: 1384px) {
-    .header {padding: 0 83px; margin-bottom: 70px;}
+@media (max-width: 1325px) {
+    .overview {padding-right: 165px;}
     .overview-text {max-width: 320px;}
-    .overview-text__heading {font-size: 34px;}
-    .overview-image__item {max-width: 415px; min-height: 281px;}
-    .features-list__item-image img {max-width: 320px; min-height: 220px;}
-    .feature-list__item-text {max-width: 263px;} 
-    .feature-list__item-text-heading {font-size: 16px;}
-    .technology-list__item {max-width: 195px;}
-    .technology-list__item-wrap {padding: 0 52px;}
-    .technology-list__item-wrap-number {font-size: 80px; margin-bottom: 10px;}
-    .technology-list__item-wrap-image {margin-bottom: -9px;}
-    .technology-list__item-wrap-image img {width: 60px;}
+    .technology-list {flex-wrap: wrap;}
+    .mobile-apps {padding-right: 165px;}
     .mobile-apps-text {max-width: 320px;}
-    .mobile-apps__heading {font-size: 32px;}
-    .mobile-apps-photo img {max-width: 415px; min-height: 281px;}
-    .contact-text {max-width: 350px;}
-    .contact-form {max-width: 450px;}
-    .contact-form__input {min-width: 450px;}
+    .contact-text {max-width: 320px;}
+    .contact-form {max-width: 440px;}
+    .contact-form__input_name {min-width: 205px;}
+    .contact-form__input {min-width: 440px;}
 }
 
-@media (max-width: 1296px) {
-    .features-list__item-image img {max-width: 270px; min-height: 170px;}
-    .feature-list__item-text {max-width: 220px; margin-left: 25px;}
-}
 
-@media (max-width: 1172px) {
-    .header {padding: 0 15px;}
-    .overview {padding-right: 200px;}
-    .overview-text__heading {font-size: 28px;}
-    .overview-image__item {max-width: 365px; min-height: 231px;}
-    .technology-list__item {max-width: 175px;}
-    .technology-list__item-wrap {padding: 0 42px;}
-    .mobile-apps {padding-right: 200px;}
-    .mobile-apps__heading {font-size: 24px; min-height: 60px;}
-    .mobile-apps-photo img {max-width: 365px; min-height: 231px;}
-    .contact-form {max-width: 350px;}
-    .contact-form__input {min-width: 350px;}
-}
-
-@media (max-width: 1144px) {
-    .features-list__item-image img {max-width: 250px; min-height: 150px;}
-    .feature-list__item-text {max-width: 200px; margin-left: 25px;}
-}
-
-@media (max-width: 1076px) {
-    .header-menu {justify-content: space-around;}
-    .header-menu__item {font-size: 10px;}
-    .features-list__item-image img {max-width: 230px; min-height: 130px;}
-    .feature-list__item-text {max-width: 180px; margin-left: 25px;}
-    .overview-text__description {font-size: 12px;}
-    .overview-image__item {max-width: 315px; min-height: 181px;}
-    .mobile-apps__description {font-size: 12px;}
-    .mobile-apps-photo img {max-width: 315px; min-height: 181px;}
-    .contact-text {max-width: 300px;}
-    .contact-form {max-width: 300px;}
-    .contact-form__input {min-width: 300px;}
-}
-
-@media (max-width: 1024px) {
-    .overview {padding: 0 130px 0 83px;}
-    .features {padding: 84px 83px 0 83px;}
-    .technology {padding: 84px 83px 0 83px;}
-    .mobile-apps {padding: 0 130px 0 83px;}
-    .contact {padding: 84px 83px 0 83px;}
-    .footer {padding: 85px 83px 86px 83px;}
-}
-
-@media (max-width: 856px) {
-    .header {padding: 0 30px;}
-    .overview {padding: 0 65px 0 42px;}
-    .features {padding: 84px 42px 0 42px;}
-    .technology {padding: 84px 42px 0 42px;}
-    .mobile-apps {padding: 0 65px 0 42px;}
-    .contact {padding: 84px 42px 0 42px;}
-    .footer {padding: 85px 42px 86px 42px;}
-}
-
-@media (max-width: 772px) {
+@media (max-width: 1106px) {
     .header {justify-content: space-around;}
     .header__logo {display: none;}
     .header__button {display: none;}
@@ -518,17 +456,17 @@ body {
     .overview-text__description {min-width: 600px;}
     .overview-image__item {max-width: 500px; min-height: 400px;}
     .features-list {flex-direction: column; align-items: center;}
+    .features-list__item:not(:last-child) {margin-right: 0;}
     .features-list__item-image {min-height: 600px;}
     .features-list__item-image img {min-width: 600px; min-height: 300px;}
-    .feature-list__item-text {margin-bottom: 90px; margin-left: 100px; max-width: 400px;}
+    .feature-list__item-text {margin-bottom: 80px; margin-left: 100px; max-width: 400px;}
     .feature-list__item-text-heading {font-size: 14px;}
-    .technology {padding-bottom: 50px;}
-    .technology-list {flex-wrap: wrap;}
+    .technology {padding-bottom: 50px; padding: 25px 42px;}
     .mobile-apps {flex-direction: column-reverse; padding: 25px 42px;}
     .mobile-apps-text {min-width: 600px;}
-    .mobile-apps__heading {text-align: center;}
+    .mobile-apps__heading {min-height: 53px;}
     .mobile-apps-photo img {max-width: 500px; min-height: 400px;}
-    .contact {justify-content: center ;flex-direction: column; align-items: center; padding-top: 0; min-height: 500px;}
+    .contact {justify-content: center; flex-direction: column; align-items: center; padding-top: 0; min-height: 500px; padding: 25px 42px;}
     .contact-text__heading {text-align: center; margin-bottom: 5px;}
     .contact-form__input {min-height: 40px; margin-bottom: 10px;}
     .footer {padding: 43px 42px 43px 42px;}
@@ -538,70 +476,46 @@ body {
 }
 
 @media (max-width: 700px) {
-    .first-screen__text_heading {font-size: 36px;}
-    .first-screen__text_description {font-size: 20px;}
-    .overview-text {min-width: 500px;}
-    .overview-text__description {min-width: 500px;}
-    .overview-image__item {max-width: 400px; min-height: 300px;}
-    .features-list__item-image {min-height: 500px;}
-    .features-list__item-image img {min-width: 500px; min-height: 250px;}
-    .feature-list__item-text {margin-bottom: 60px; margin-left: 100px; max-width: 300px;}
-    .mobile-apps-text {min-width: 500px;}
-    .mobile-apps-photo img {max-width: 400px; min-height: 300px;}
-}
-
-@media (max-width: 600px) {
-    .header {margin-bottom: 80px; padding: 0;}
-    .header-menu {min-width: 350px;}
-    .first-screen__text_description {font-size: 18px;}
-    .overview-text {min-width: 400px;}
-    .overview-text__description {min-width: 400px;}
-    .overview-image__item {max-width: 300px; min-height: 250px;}
-    .features-list__item-image {min-height: 400px;}
-    .features-list__item-image img {min-width: 400px; min-height: 200px;}
-    .feature-list__item-text {margin-bottom: 60px; margin-left: 50px; max-width: 300px;}
-    .mobile-apps-text {min-width: 400px;}
-    .mobile-apps-photo img {max-width: 300px; min-height: 250px;}
-}
-
-@media (max-width: 500px) {
-    .overview-text {min-width: 300px;}
-    .overview-text__description {min-width: 300px;}
-    .features-list__item-image {min-height: 300px;}
-    .features-list__item-image img {min-width: 300px; min-height: 150px;}
-    .feature-list__item-text {margin-bottom: 30px; margin-left: 25px; max-width: 250px;}
-    .mobile-apps-text {min-width: 300px;}
-}
-
-
-@media (max-width: 400px) {
     .header {margin-bottom: 40px;}
     .header-menu {flex-direction: column; min-width: 300px;}
     .first-screen__text_heading {font-size: 32px; margin-bottom: 20px;}
     .first-screen__text_description {font-size: 12px; margin-bottom: 20px;}
-    .overview {padding: 10px 10px;}
-    .overview-text {min-width: 200px;}
-    .overview-text__description {min-width: 200px;}
-    .features {padding: 10px 10px;}
-    .mobile-apps {padding: 10px 10px;}
-    .mobile-apps-text {min-width: 200px;}
-    .mobile-apps-text__description {min-width: 200px;}
-    .contact {padding: 0 10px;}
-    .contact-form__input_name:first-child {margin-right: 0;}
-}
-
-
-@media (max-width: 300px) {
-    .header-menu {flex-direction: column; min-width: 260px;}
-    .overview {padding: 10px 10px;}
-    .overview-image__item {max-width: 260px; min-height: 126px;}
-    .features-list__item-image {min-height: 260px;}
-    .features-list__item-image img {min-width: 260px; min-height: 130px;}
-    .feature-list__item-text {margin-bottom: 10px; margin-left: 30px; max-width: 200px;}
-    .mobile-apps {padding: 10px 10px;}
-    .mobile-apps-photo img {max-width: 260px; min-height: 126px;}
+    .overview {padding: 30px 10px;}
+    .overview-text {min-width: 400px;}
+    .overview-text__description {min-width: 400px;}
+    .overview-image__item {max-width: 400px; min-height: 300px;}
+    .features {padding: 30px 10px;}
+    .feature-list__item-text {margin-bottom: 60px; margin-left: 50px; max-width: 250px;}
+    .features-list__item-image {min-height: 400px;}
+    .features-list__item-image img {max-width: 400px; min-height: 250px; min-width: 0;}
+    .technology {padding: 30px 10px;}
+    .mobile-apps {padding: 30px 10px;}
+    .mobile-apps-text {min-width: 400px;}
+    .mobile-apps-text__description {min-width: 400px;}
+    .mobile-apps-photo img {max-width: 400px; min-height: 300px;}
     .contact {padding: 0 10px;}
     .contact-form {max-width: 260px;}
     .contact-form__input {min-width: 260px;}
-    .footer {padding: 21px 21px 21px 21px;}
+    .contact-form__input_name:first-child {margin-right: 0;}
+    .footer {padding: 30px 10px;}
+}
+
+
+@media (max-width: 400px) {
+    .header {padding: 0 10px;}
+    .header-menu {min-width: 260px;}
+    .overview {padding: 10px 10px;}
+    .overview-text {min-width: 260px;}
+    .overview-text__description {min-width: 260px;}
+    .overview-image__item {max-width: 260px; min-height: 160px;}
+    .features-list__item-image {min-height: 260px;}
+    .features-list__item-image img {max-width: 260px; min-height: 130px;}
+    .feature-list__item-text {margin-bottom: 10px; margin-left: 30px; max-width: 200px;}
+    .technology {padding: 10px 10px;}
+    .mobile-apps {padding: 10px 10px;}
+    .mobile-apps-text {min-width: 260px;}
+    .mobile-apps-text__description {min-width: 260px;}
+    .mobile-apps-photo img {max-width: 260px; min-height: 160px;}
+    .footer {padding: 10px 10px;}
+    .footer-list {margin-bottom: 35px;}
 }
